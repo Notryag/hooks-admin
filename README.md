@@ -30,5 +30,6 @@ If you are developing a production application, we recommend updating the config
 ## 
 
 ```shell
-pnpm install antd --save
+pnpm install antd react-router-dom @reduxjs/toolkit react-redux
+--save
 ```
