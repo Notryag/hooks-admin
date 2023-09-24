@@ -17,7 +17,6 @@ const counterSlice = createSlice({
 
 export const {increment, decrement}  = counterSlice.actions
 
-
 export const store = configureStore({
   reducer: {
     counter: counterSlice.reducer
