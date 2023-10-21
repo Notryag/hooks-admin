@@ -1,10 +1,11 @@
 import { selectCount, useAppSelect, useAppDispatch, increment, decrement } from "../../redux"
 import { Form, Input, Button } from "antd";
 import { UserOutlined, LockOutlined, CloseCircleOutlined } from "@ant-design/icons";
-import { Login } from "@/api/interface";
+import type { Login } from "@/api/interface/index.ts";
 import md5 from 'js-md5';
+import { useState } from "react";
 
-export default function Login() {
+export default function LoginForm() {
   const count = useAppSelect(selectCount)
   const dispatch = useAppDispatch()
 
